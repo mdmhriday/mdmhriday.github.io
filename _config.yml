@@ -70,7 +70,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: mdmhriday # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: MahediRiday # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: mdmhriday # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 orcid_id: # your ORCID ID
@@ -120,7 +120,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+# disqus_shortname: al-folio # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
