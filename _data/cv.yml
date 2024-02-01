@@ -26,15 +26,15 @@
       year: 2019
       #description:
 
-#- title: Experience
-  #type: time_table
-  #contents:
-    #- title: Professor of Theoretical Physics
-      #institution: Institute for Advanced Study, Princeton University
-      #year: 1933 - 1955
-      #description:
-        #- Description 1.
-        #- Description 2.
+- title: Experience
+  type: time_table
+  contents:
+    - title: Deep Learning Intern
+      institution: Hyundai Motors Europe Technical Center
+      year: 09.2023 - 03.2024
+      description:
+        - Contributed to the development and implementation of deep learning model for video data anonymization.
+        - Assisted in ensuring compliance with privacy standards.
         #- title: Description 3.
           #contents:
             #- Sub-description 1.
