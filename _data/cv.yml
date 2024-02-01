@@ -26,12 +26,12 @@
       year: 2019
       #description:
 
-#- title: Experience
-  #type: time_table
-  #contents:
-    #- title: Professor of Theoretical Physics
-      #institution: Institute for Advanced Study, Princeton University
-      #year: 1933 - 1955
+title: Experience
+  type: September 2023 - March 2024
+  contents:
+    - title: Deep Leanring Work Student
+      institution: Hyundai Motors Europe Technical Center
+      year: 1933 - 1955
       #description:
         #- Description 1.
         #- Description 2.
