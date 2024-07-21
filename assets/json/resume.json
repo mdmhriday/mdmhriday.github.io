@@ -2,7 +2,7 @@
   "basics": {
     "name": "Md Mahedi Hasan Riday",
     "email": "mdmhriday@gmail.com",
-    "url": "https://mdmhriday.github.io/about/",
+    "url": "https://mdmhriday.github.io/",
     "summary": "A dedicated Machine Learning Engineer with extensive experience in Image Data and a strong foundation in deep learning and computervision.",
     "location": {
       "city": "Siegen",
@@ -30,7 +30,7 @@
   "education": [
     {
       "institution": "University of Siegen, Siegen, Germany",
-      "location": "Siegen Germany, Switzerland",
+      "location": "Siegen, Germany",
       "url": "https://www.uni-siegen.de/",
       "area": "Computer Science",
       "studyType": "Master of Science",
