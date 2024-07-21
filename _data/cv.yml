@@ -2,49 +2,96 @@
   type: map
   contents:
     - name: Full Name
-      value: Md Mahedi Hasan Riday
+      value: Albert Einstein
     - name: Date of Birth
-      value: 21th June 1997
+      value: 14th March 1879
     - name: Languages
-      value: Bengali, English, German
+      value: English, German
 
 - title: Education
   type: time_table
   contents:
-    - title: Master of Science
-      institution: University of Siegen
-      year: 2023-2025
+    - title: PhD
+      institution: University of Zurich, Zurich, Switzerland
+      year: 1905
+      description:
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Federal teaching diploma
+      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
+      year: 1900
+      description:
+        - Description 1.
+        - Description 2.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Computer Vision Intern
-      institution: Hyundai Motor Europe Technical Center GmbH
-      year: 09.2023 - 06.2024
+    - title: Professor of Theoretical Physics
+      institution: Institute for Advanced Study, Princeton University
+      year: 1933 - 1955
       description:
-        - Worked on deep learning-based video anonymization system compliant with European privacy regulations.
-    - title: Freelance Machine Learning Engineer
-      institution: 
-      year: 06.2021 - 12.2022
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Visiting Professor
+      institution: California Institute of Technology, Pasadena, California, US
+      year: 1933
       description:
-        - Finetuned and implemented models for object detection and image
- super-resolution tasks.
-        - Collaborated on the development of a chatbot prototype.
+        - Description 1.
+        - Description 2.
 
-- title: Research Interest
+    - title: Director
+      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+      year: 1917-1933
+
+    - title: Professor of Theoretical Physics
+      institution: Karl-Ferdinand University, Prague, Czechoslovakia
+      year: 1911 - 1917
+      description:
+
+    - title: Associate Professor of Theoretical Physics
+      institution: University of Zurich, Zurich, Switzerland
+      year: 1909 - 1911
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-now
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 1921
+      items:
+        - Nobel Prize in Physics
+        - Matteucci Medal
+    - year: 2029
+      items:
+        - Max Planck Medal
+
+- title: Academic Interests
   type: nested_list
   contents:
-    - title: Computer Graphics and Vision
+    - title: Topic 1.
       items:
-        - Rendering.
-        - Object detection and Segmentation.
-        - Generative models. (GAN, Diffusion models).
-    - title: 3D Computer Vision
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
       items:
-        - 3D scene reconstruction.
-        - Novel View synthesis.
+        - Description 1.
+        - Description 2.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Reading books, Gardening.
+    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
