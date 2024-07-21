@@ -140,7 +140,7 @@ pagination:
   enabled: true
 
 related_blog_posts:
-  enabled: true
+  enabled: false # changed by mahedi
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
