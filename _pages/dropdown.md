@@ -1,7 +1,7 @@
 ---
 layout: page
 title: submenus
-nav: true
+nav: false # changed by Mahedi
 nav_order: 8
 dropdown: true
 children:
