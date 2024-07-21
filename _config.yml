@@ -141,7 +141,7 @@ pagination:
 
 related_blog_posts:
   enabled: false # changed by mahedi
-  max_related: 5
+  max_related: 0
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
