@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Here, you can explore a curated selection of my work, showcasing a variety of projects that highlight my skills, creativity, and problem-solving abilities. This page is regularly updated to reflect my latest work and achievements. However, please note that it may not always be as current as my resume.
 nav: true
