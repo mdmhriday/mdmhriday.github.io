@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Here, you can explore a curated selection of my work, showcasing a variety of projects that highlight my skills, creativity, and problem-solving abilities. This page is regularly updated to reflect my latest work and achievements. However, please note that it may not always be as current as my resume.
 nav: true
 nav_order: 3
 display_categories: [work, fun]
