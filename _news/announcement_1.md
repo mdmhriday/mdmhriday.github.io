@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2023-09-17 08:00:00-0400
+date: 2023-04-01 08:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Started Computer Vision Internship at HMETC
+I’ve started my master’s in Computer Science with a specialization in Visual Computing at University of Siegen.
+
