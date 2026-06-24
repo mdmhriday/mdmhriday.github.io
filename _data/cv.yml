@@ -56,15 +56,14 @@ cv:
           - Video anonymization using deep learning
           - Privacy-preserving computer vision systems
 
-    Publications:
-      - title: 
-        authors:
-          -
-        publisher: 
-        releaseDate: 
-        url: 
-        summary:
-
+    #Publications:
+    #  - title: 
+    #    authors:
+    #      -
+    #   publisher: 
+    #    releaseDate: 
+    #    url: 
+    #    summary:
     skills:
       - name: Multimodal Machine Learning
         level: Advanced
