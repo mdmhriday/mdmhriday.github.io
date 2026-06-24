@@ -64,7 +64,7 @@ cv:
     #    releaseDate: 
     #    url: 
     #    summary:
-    skills:
+    Skills:
       - name: Multimodal Machine Learning
         level: Advanced
         icon: fa-solid fa-diagram-project
@@ -90,7 +90,7 @@ cv:
       - name: German
         summary: "Basic"
 
-    interests:
+    Interests:
       - name: Artificial Intelligence
         icon: fa-solid fa-tag
         keywords: "Machine Learning, Deep Learning, Multimodal AI, Large Language Models"
@@ -107,7 +107,7 @@ cv:
         icon: fa-solid fa-tag
         keywords: "Video Understanding, 3D Reconstruction, Visual Learning"
 
-    projects:
+    Projects:
     - name: Vision-Language Model Analysis
       summary: Controlled perturbation study of multimodal model dependence on visual input.
       highlights:
