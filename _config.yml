@@ -86,9 +86,9 @@ al_folio:
 navbar_fixed: true
 footer_fixed: true
 search_enabled: false
-socials_in_search: true
-posts_in_search: true
-bib_search: true
+socials_in_search: false
+posts_in_search: false
+bib_search: false
 
 # Dimensions
 max_width: 930px
@@ -232,7 +232,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
