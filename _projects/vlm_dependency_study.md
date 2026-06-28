@@ -2,6 +2,7 @@
 layout: page
 title: Do Vision-Language Models Actually Use the Image?
 description: A controlled perturbation study across 1500 visually-necessary questions from MMStar
+img: assets/img/vlm_teaser.png
 importance: 1
 category: research
 related_publications: false
