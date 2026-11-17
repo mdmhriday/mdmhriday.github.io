@@ -10,7 +10,7 @@ cv:
     - network:
       username:
     - network:
-      username: 
+      username:
     - network:
       username:
 
@@ -25,7 +25,7 @@ cv:
     Education:
       - institution: University of Siegen
         location: Siegen, Germany
-        url: 
+        url:
         area: Computer Science
         studyType: Master of science
         start_date: 2023
@@ -33,7 +33,6 @@ cv:
         score: ""
         courses:
         highlights:
-
 
     Experience:
       - company: University of Siegen
@@ -57,12 +56,12 @@ cv:
           - Privacy-preserving computer vision systems
 
     #Publications:
-    #  - title: 
+    #  - title:
     #    authors:
     #      -
-    #   publisher: 
-    #    releaseDate: 
-    #    url: 
+    #   publisher:
+    #    releaseDate:
+    #    url:
     #    summary:
     Skills:
       - name: Multimodal Machine Learning
@@ -86,7 +85,7 @@ cv:
 
       - name: English
         summary: "Fluent"
-      
+
       - name: German
         summary: "Basic"
 
@@ -108,10 +107,10 @@ cv:
         keywords: "Video Understanding, 3D Reconstruction, Visual Learning"
 
     Projects:
-    - name: Vision-Language Model Analysis
-      summary: Controlled perturbation study of multimodal model dependence on visual input.
-      highlights:
-        - MMStar benchmark evaluation
-        - Total Variation Distance analysis
-      start_date: 2025-08-01
-      end_date: 2026-06-01
+      - name: Vision-Language Model Analysis
+        summary: Controlled perturbation study of multimodal model dependence on visual input.
+        highlights:
+          - MMStar benchmark evaluation
+          - Total Variation Distance analysis
+        start_date: 2025-08-01
+        end_date: 2026-06-01
