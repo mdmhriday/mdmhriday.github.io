@@ -59,10 +59,10 @@ jobs:
       - name: Install JS deps 📦
         run: npm ci
 
-      - name: Prepare baseline worktree (v0.16.3) 🧱
+      - name: Prepare baseline worktree (v1.0-dev) 🧱
         run: |
-          git fetch --no-tags https://github.com/alshedivat/al-folio.git refs/tags/v0.16.3:refs/tags/v0.16.3
-          git worktree add ../al-folio-baseline v0.16.3
+          git fetch --no-tags https://github.com/alshedivat/al-folio.git refs/heads/v1.0-dev:refs/remotes/upstream/v1.0-dev
+          git worktree add ../al-folio-baseline refs/remotes/upstream/v1.0-dev
           (cd ../al-folio-baseline && bundle install && npm ci)
 
       - name: Install Jupyter + ImageMagick runtime deps 🧰
