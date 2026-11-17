@@ -9,5 +9,4 @@ cv_format: rendercv # options: rendercv, jsonresume, something else
 description: An overview of academic background, research experience, publications, and technical skills.
 toc:
   sidebar: left
-
 ---

@@ -8,7 +8,7 @@ category: research
 related_publications: false
 ---
 
-Vision-language models score well on standard benchmarks. But scoring well does not tell you *how* the model arrived at its answer — whether it genuinely processed the image or whether it could have done just as well without it. This project runs a controlled experiment to find out where, and how much, a VLM actually depends on visual input.
+Vision-language models score well on standard benchmarks. But scoring well does not tell you _how_ the model arrived at its answer — whether it genuinely processed the image or whether it could have done just as well without it. This project runs a controlled experiment to find out where, and how much, a VLM actually depends on visual input.
 
 ---
 
@@ -60,14 +60,14 @@ The model does not degrade gracefully under visual perturbation. It falls off a 
 </div>
 </div>
 
-| Condition | Accuracy |
-|---|---|
+| Condition       | Accuracy  |
+| --------------- | --------- |
 | C0 — Full image | **55.3%** |
-| Blur σ=2 | 31.8% |
-| Blur σ=5 | 27.7% |
-| Blur σ=10 | 27.3% |
-| Blur σ=20 | 26.9% |
-| C1 — No image | 27.1% |
+| Blur σ=2        | 31.8%     |
+| Blur σ=5        | 27.7%     |
+| Blur σ=10       | 27.3%     |
+| Blur σ=20       | 26.9%     |
+| C1 — No image   | 27.1%     |
 
 The model reaches near text-only floor at the first perturbation. The same pattern holds for masking: 10% masking costs 23.2pp, but going all the way to 75% masking costs only 1.8pp more. The cliff is consistent across both degradation types.
 
@@ -83,7 +83,7 @@ The three localisation conditions — C1, C2, C3 — triangulate where in the vi
 - **C2** corrupts activation statistics at the encoder source, but keeps tokens present
 - **C3** destroys spatial arrangement of content after the MLP bridge, but preserves per-token statistics and token count
 
-If the model depended primarily on token *presence*, C1 should produce the largest distributional shift. If it depended on encoder *statistics*, C2 should. If it depended on spatial *content*, C3 should.
+If the model depended primarily on token _presence_, C1 should produce the largest distributional shift. If it depended on encoder _statistics_, C2 should. If it depended on spatial _content_, C3 should.
 
 <div class="row mt-3">
 <div class="col-sm-8 offset-sm-2">
@@ -94,29 +94,29 @@ If the model depended primarily on token *presence*, C1 should produce the large
 </div>
 </div>
 
-| Condition | TVD from C0 | Accuracy |
-|---|---|---|
-| C1 — Token omission | 0.633 | 27.1% |
-| C2 — Encoder noise | **0.647** | 27.1% |
-| C3 — Spatial shuffle | 0.564 | 29.4% |
-| C7 — Text shuffle | 0.650 | 26.8% |
+| Condition            | TVD from C0 | Accuracy |
+| -------------------- | ----------- | -------- |
+| C1 — Token omission  | 0.633       | 27.1%    |
+| C2 — Encoder noise   | **0.647**   | 27.1%    |
+| C3 — Spatial shuffle | 0.564       | 29.4%    |
+| C7 — Text shuffle    | 0.650       | 26.8%    |
 
 The ordering is TVD(C2) > TVD(C1) > TVD(C3). Two things stand out.
 
-First, C1 and C2 produce identical accuracy — 27.1% — but different distributional shifts. Accuracy alone would say these conditions are equivalent. TVD reveals they are not: corrupting encoder output shifts the distribution more than removing tokens entirely. The model reacts differently to *no visual signal* versus *corrupted visual signal*, even when the end accuracy is the same.
+First, C1 and C2 produce identical accuracy — 27.1% — but different distributional shifts. Accuracy alone would say these conditions are equivalent. TVD reveals they are not: corrupting encoder output shifts the distribution more than removing tokens entirely. The model reacts differently to _no visual signal_ versus _corrupted visual signal_, even when the end accuracy is the same.
 
 Second, C3 produces the smallest distributional shift of the three. Destroying spatial arrangement — which object is where, what the layout of the image is — matters less than corrupting what comes out of the encoder. The model is more sensitive to encoder-level statistics than to spatial content specifically.
 
 The category breakdown shows this is not uniform across task types:
 
-| Benchmark | C0 | C1 (text-only) | TVD(C2) | TVD(C3) |
-|---|---|---|---|---|
-| SEEDBench_IMG | 52.6% | 23.8% | 0.826 | 0.812 |
-| MMBench | 81.7% | 30.3% | 0.726 | 0.723 |
-| ScienceQA | 52.2% | 40.6% | 0.646 | 0.665 |
-| AI2D | 39.8% | 27.6% | 0.544 | 0.416 |
-| MathVista | 45.5% | 23.2% | 0.472 | **0.223** |
-| MMMU | 37.0% | 32.0% | 0.405 | 0.327 |
+| Benchmark     | C0    | C1 (text-only) | TVD(C2) | TVD(C3)   |
+| ------------- | ----- | -------------- | ------- | --------- |
+| SEEDBench_IMG | 52.6% | 23.8%          | 0.826   | 0.812     |
+| MMBench       | 81.7% | 30.3%          | 0.726   | 0.723     |
+| ScienceQA     | 52.2% | 40.6%          | 0.646   | 0.665     |
+| AI2D          | 39.8% | 27.6%          | 0.544   | 0.416     |
+| MathVista     | 45.5% | 23.2%          | 0.472   | **0.223** |
+| MMMU          | 37.0% | 32.0%          | 0.405   | 0.327     |
 
 MathVista shows TVD(C3) = 0.223 — spatial arrangement of visual content barely affects the output distribution on mathematical reasoning tasks. SEEDBench and MMBench show TVD(C3) near 0.81 — for scene understanding and visual grounding tasks, spatial content matters substantially. Visual dependence is a joint property of model and task, not a fixed model-level constant.
 
@@ -126,11 +126,11 @@ MathVista shows TVD(C3) = 0.223 — spatial arrangement of visual content barely
 
 C5 (masking) and C6 (token reduction) allow a direct comparison: C5 destroys spatial coherence while preserving token count; C6 reduces token count while preserving spatial coherence. If they produce similar results, the dimensions are not independent. If they diverge, they are.
 
-| Condition | What it disrupts | Accuracy |
-|---|---|---|
-| C5d — 75% masked | Spatial coherence (count preserved) | 30.3% |
-| C6 — Token reduction | Token count (coherence preserved) | 30.8% |
-| C1 — No image | Both | 27.1% |
+| Condition            | What it disrupts                    | Accuracy |
+| -------------------- | ----------------------------------- | -------- |
+| C5d — 75% masked     | Spatial coherence (count preserved) | 30.3%    |
+| C6 — Token reduction | Token count (coherence preserved)   | 30.8%    |
+| C1 — No image        | Both                                | 27.1%    |
 
 At matched severity, the two conditions produce nearly identical accuracy (30.3% vs 30.8%). This suggests spatial coherence and token count are not independently weighted by the model — disrupting either one produces a similar floor, close to but above the no-image baseline. The model treats them as roughly equivalent degradation of the visual signal rather than separable components.
 
